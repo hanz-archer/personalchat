@@ -8,8 +8,25 @@
 
         <div>
             <h1>Welcome to Hanz Archer's Chat Page</h1>
-            <p>Vidiacall App</p>
+            <p>Practice Practice rani siya nga app</p>
         </div>
+
+        <form id="form">
+            <div class="form-field">
+                <input type="submit" value="Join Video"/>
+            </div>
+        </form>
     </section>
 </main>
+
+<script type="text/javascript">
+    let form = document.getElementById('form')
+
+    let handleSubmit = async(e) => {
+        e.preventDefault()
+        window.open('/room', '_self')
+    } 
+    
+    form.addEventListener('submit', handleSubmit)
+</script>
 {% endblock content %}
