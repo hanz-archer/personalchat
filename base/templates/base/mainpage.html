@@ -19,7 +19,14 @@
     </section>
 </main>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
+     Swal.fire({
+        title: 'Welcome!',
+        text: 'This is just a practice website created with the guidance of YouTube tutorials and some AI assistance. I am just a BSIT student practicing my skills.',
+        imageAlt: "A tall image"
+    });
+
     let form = document.getElementById('form')
 
     let handleSubmit = async(e) => {
@@ -29,4 +36,5 @@
     
     form.addEventListener('submit', handleSubmit)
 </script>
+
 {% endblock content %}
