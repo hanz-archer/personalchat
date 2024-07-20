@@ -1,1 +1,15 @@
-<h2>Lobby</h2>
+{% extends 'base/main.html'%}
+{%load static%}
+
+{% block content %}
+<main>
+    <section id="form-container">
+        <img id="logo" src="{% static 'images/chat.png'%}"/>
+
+        <div>
+            <h1>Welcome to Hanz Archer's Chat Page</h1>
+            <p>Vidiacall App</p>
+        </div>
+    </section>
+</main>
+{% endblock content %}
